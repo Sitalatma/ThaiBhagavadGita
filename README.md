@@ -14,4 +14,6 @@ There's also "www" directory which contains all the files for the website (with 
 
 Within that "www" directory there's directory "0", it contains all the files for the same website but with transliteration method used in the existing book. It was automatically created from "th-bg-original.txt". 
 
+Both websites rely on "vedabase.css" to display properly. It's included but needs to be placed correctly relative to the website - look inside html code to see where it should be on your computer.
+
 Whoever wants to work on this can copy this repository and start his own or ask me for admin/editing rights to this one. I'm very new to Github so I'm only vaguely aware of all its features, will gradually learn as needed.
