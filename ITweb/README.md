@@ -1,6 +1,7 @@
 # ISKCON Thailand website files
 
 seqC.txt is a sequence of chapters
+
 seqV.txt is a sequence of verses
 
 The last html file, either verse or chapter, points to the first verse or chapter as "next" and the first points to the last as "previous".
