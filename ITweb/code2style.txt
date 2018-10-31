@@ -1,0 +1,33 @@
+@chapter = r r-title-small r-chapter,<h1>
+@ch-title = r r-lang-en r-chapter-title r-title,<h1>
+@text = bb r-verse,<h1>
+@sans-uvaca =
+@sans = r r-lang-en r-verse-text,
+@wbw = r r-lang-en r-synonyms,<p>
+@trans-title = wrapper-translation,<h2>
+@trans = r r-lang-en r-translation,<p>
+@purp-title = wrapper-purport,<h2>
+@para = r r-lang-en r-paragraph,<p>
+@verse-ref = r r-lang-en r-reference,<p>
+@ch-end = r r-lang-en r-paragraph-thus-ends,<p>
+@verse-uvaca = r r-lang-en r-verse-text,
+@sub-chapter = r r-lang-en r-sub-chapter,<h2>
+@para-centered = r r-lang-en r-paragraph-centered,<p>
+
+
+@chapter = chapter-num,<h1>
+@ch-title = chapter-title,<h1>
+@text = text,<h1>
+@dev = devanagari,<div> #not present in th-bg-original.txt but will be added to html
+@sans-uvaca = sans,<div>
+@sans = sans,<div>
+@wbw = wbw,<div>
+@trans-title = title,<h2>
+@trans = trans,<div>
+@purp-title = title,<h2>
+@para = p,<p>
+@verse-ref = sans,<div>
+@ch-end = p-end,<p>
+@verse-uvaca = sans,<div>
+@sub-chapter = chapter-sub,<h2>
+@para-centered = p-centered,<p>
