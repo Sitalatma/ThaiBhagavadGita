@@ -1,0 +1,74 @@
+   body {
+       background-image:url(https://www.vedabase.com/sites/all/themes/veda/images/bg.jpg);
+       /*color:navy;*/
+   }
+   div {
+       margin: 20px 0px;
+   }
+   .bg-content {
+       width:80%;
+       margin: auto;
+   }
+   .container {
+   }
+   .chapter-num {
+       text-align:center;
+   }
+   .chapter-numSmall {
+   }
+   .chapter-title {
+        color:red;
+        text-align:center;
+    }
+   .text {
+       text-align:center;
+   }
+   .devanagari {
+      font-family: Noto Sans Devanagari,Sanskrit\ 2003,Lohit Devanagari,Arial,serif;
+      display: inline-block;
+      margin-left: 50%;
+      transform: translateX(-50%);
+      text-align: left;
+      font-size: 1.5em;
+   }
+   .sans-uvaca {
+       text-align:center;
+   }
+   .sans {
+       text-align:center;
+   }
+   .sans-ref {
+      margin-left: 50%;
+      transform: translateX(-80%);       
+      text-align:right;
+   }   
+   .wbw {
+   }
+   .text-title {
+        text-align:center; 
+        font-weight:bold;
+        font-style:italic;
+        font-size: 1.2em;
+   }
+   .trans {
+       font-weight: bold;
+       text-indent: 2em;
+   }
+   .purport {
+       text-indent: 2em;
+   }
+   .sign-off {
+       text-align:right;
+   }
+   .ref {
+   }
+   .p-end {
+   }
+   .verse-uvaca {
+   }
+   .chapter-sub {
+   }
+   .p-centered {
+       text-align:center;
+   }
+ 
