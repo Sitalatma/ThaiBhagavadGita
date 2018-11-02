@@ -17,7 +17,7 @@
 
 @chapter = chapter-num,<h1>
 @ch-title = chapter-title,<h1>
-@text = text,<h1>
+@text = text,<h2>
 @dev = devanagari,<div> #not present in th-bg-original.txt but will be added to html
 @sans-uvaca = sans,<div>
 @sans = sans,<div>
