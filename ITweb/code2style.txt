@@ -18,16 +18,17 @@
 @chapter = chapter-num,<h1>
 @ch-title = chapter-title,<h1>
 @text = text,<h2>
-@dev = devanagari,<div> #not present in th-bg-original.txt but will be added to html
-@sans-uvaca = sans,<div>
-@sans = sans,<div>
-@wbw = wbw,<div>
+@dev = devanagari,
+@sans-uvaca = sans,
+@sans = sans,
+@wbw = wbw,
 @trans-title = title,<h2>
-@trans = trans,<div>
+@trans = trans,
 @purp-title = title,<h2>
-@para = p,<p>
-@verse-ref = sans,<div>
-@ch-end = p-end,<p>
-@verse-uvaca = sans,<div>
+@para = purport,
+@verse-ref = sans-ref,
+@ch-end = p-end,
+@verse-uvaca = sans,
 @sub-chapter = chapter-sub,<h2>
-@para-centered = p-centered,<p>
+@para-centered = p-centered,
+

@@ -12,4 +12,6 @@ These errors can be avoided with redirects, of course, but why process it on the
 
 code2style.txt is a map of @codes in the main th-bg-original.txt to styles in vedabase.css. Some of them look exactly the same and do not make any apparent difference.
 
-Second group in the same file is my proposal how to rename these styles in the new css. It follows "class,tag" format and it's only a starting point - there could be more classes needed to cover various weird cases. There are more classes in vedabase.css so they might be needed for something.
+Second group in code2style.txt is what is used for current conversion into html. First value is a class name corresponding to classes in "it.css" (in "it" directory) and second value is tag. When this tag is absent my script automatically creates a <div> element. 
+
+In the "it" directory there are chapter and verse files and it.css that goes with them. They look more or less okay already and include header and footer that obviously need to be replaced. I can generate same files without header and footer but they won't work in the browser anymore. As it is, the directory can be copied and then browsed locally.
