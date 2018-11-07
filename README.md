@@ -36,4 +36,14 @@ BBT devotees can start editing or proofreading with th-bg-template.txt. Or they 
 
 https://kdp.amazon.com/en_US/
 
+There's also "ITweb" folder which containes files for ISKCON Thailand Website with its own readme there.
+
+The folder named "html" contains plain html files - "full.html" has the entire Bhagavad Gita in it but it's too large to be processed easily. There's "index.html" file instead which contains the first chapter. This "index.html" then has been converted to "index.epub" and "index.pdf" to demonstrate that, in principle, it's possible to generate e-books and even actual books from the original text file automatically. I used html as intermediary format between text and .pdf and .epub. 
+
+When BBT decides on a particular software to be used for book production these files can be tweaked so that working on final presentation is kept to the minimum and does not affect the actual text content of the book, which is an important principle - separation of content from presentation.
+
+If this principle is not followed then lots of problems will pop up later on, like inability to manage several output formats at once - because changing one little comma in one place would require manually changing it in several other places and not forgetting anything. This snowballs very fast if the entire editing is done in InDesign, for example. It would be hard to copy paste text from one application to another, too - word (or rather sentence) breaks will present a particular problem for Thai language. As of now, I have no way to say whether current breaks in the existing text files are correct or not. Most of the time new line in the printed book means continuation of the previous sentence but sometimes it isn't and these cases cannot be caught programmatically because in InDesign they all look the same. This wouldn't be a problem if text is created in text file first and wrapping up long lines is done by the viewing software - browsers, text editors, even InDesign itself. If you are reading this on the computer, then this paragraph is over 1,000 characters long but it has been wrapped up without me manually inserting line breaks anywhere.
+
+
+
 I'm very new to Github so I'm only vaguely aware of all its features, all these merges, commits, and branches. Will gradually learn as I go along.
