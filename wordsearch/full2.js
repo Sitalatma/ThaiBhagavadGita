@@ -311,14 +311,14 @@ function m(a, c) {
     o = n.getContext("2d");
     p = oa("wsGridOverlay", N, O, a);
     p.setAttribute("style", "position:absolute;top:0px;left:0px;");
-    q = p.getContext("2d");
+    q = p.getContext("2d"); 
     if (c) {
         for (var d = 0; d < w.length; d++)
             w[d].d = l;
         $("#wsGridOverlay").bind("mousedown", pa);
         R.dragSelect && $("#wsGridOverlay").bind("mouseup", qa);
         $("#wsGrid").bind("mousedown", ra);
-        P = S()
+        P = S();
     } else if (M = [],
     w = [],
     L = [],
@@ -364,11 +364,6 @@ function m(a, c) {
             f.h = k;
             w[h] = f
             var fth = {};
-            //window.alert('hello');            
-            //uth.c[0].e[0].j = a.clues
-            //window.alert(uth.c[0].e[0].j)            
-            //window.alert(u.c[0].e[0].j)               
-            //window.alert(u.c[b[0]].e[b[1]].j[h])         
             fth.i = u.c[b[0]].e[b[1]].jth[h];
             fth.g = fth.i.replace(/[ '-.]/gi, "");
             fth.d = l;
@@ -494,7 +489,7 @@ function ta() {
         o.font = ga;
         L = [];
         for (var d = 0; d < w.length; d++) {
-            var e = o.measureText(w[d].i).width;
+            var e = o.measureText(wth[d].i).width;
             a ? (j + e + 10 > N ? (c = 8,
             b += 30,
             j = 8) : c = j,
@@ -502,7 +497,7 @@ function ta() {
             o.textBaseline = "middle";
             o.fillStyle = w[d].d ? "#777" : "#000";
             //o.fillText(w[d].i, c, b);
-            o.fillText(wth[d].i, c, b);            
+            o.fillText(wth[d].i, c, b);  
             w[d].d && (o.globalAlpha = 0.8,
             o.strokeStyle = ua(d),
             o.beginPath(),
@@ -568,7 +563,7 @@ function qa(a) {
     a = W(a.x, a.y);
     R.dragSelect && $("#wsGridOverlay").unbind("mousemove");
     X();
-    wa(a)
+    wa(a);
 }
 function ra(a) {
     if (R.allowHints)
@@ -700,7 +695,7 @@ function V(a) {
     na = j;
     c = {};
     c.x = a.clientX - na + window.pageXOffset;
-    c.y = a.clientY - ma + window.pageYOffset;
+    c.y = a.clientY - ma + window.pageYOffset; 
     return c
 }
 function W(a, c) {
@@ -723,7 +718,7 @@ function Ba(a) {
       , c = z + A
       , b = {};
     b.x = a.a * c;
-    b.y = a.b * c;
+    b.y = a.b * c;  
     return b
 }
 function Aa() {
