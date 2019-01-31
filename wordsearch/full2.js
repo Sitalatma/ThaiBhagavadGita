@@ -264,11 +264,14 @@ function addFollows() {
 var i = !0
   , k = null
   , l = !1;
+
 window.loadGameDataWeb = aa;
+
 window.init = m;
 window.unHighlightCells = ba;
 window.loadSettings = ca;
 var n = k, o = k, p = k, q = k, da, r, s = k, u = k, v = 0.1, ea = k, w = [], y = k, z = 44, A = 0, C = 4, fa = "bold 16pt Calibri, Trebuchet MS, Arial", ga = "bold 12pt  Arial, Calibri, Trebuchet MS", D = "#ad00cc,#006633,#CC3300,#1c3fd3,#1dcb16,#9B4E00,#336666,#337c0c,#3c0879,#97001E".split(","), F = 14, G = 14, J = 176, K = 0, ha = F * G, L = [], M = [], ia = l, N = k, O = k, P = k, Q = 0, ja, ka, la, ma, na, R = ca();
+var uth, vth, wth = []
 function aa(a) {
     v = 0;
     u = {
@@ -281,7 +284,10 @@ function aa(a) {
     u.c[0].e[0].id = a.id;
     u.c[0].e[0].title = a.title;
     u.c[0].e[0].j = a.words
+    u.c[0].e[0].jth = a.clues
+    //window.alert('u');
 }
+
 function m(a, c) {
     s = a;
     try {
@@ -299,7 +305,8 @@ function m(a, c) {
     da = N + J;
     r = O + K;
     document.getElementById(a).setAttribute("style", "position:relative;height:" + r + "px");
-    n = oa("wsGrid", da, r, a);
+    //n = oa("wsGrid", da, r, a);
+    n = oa("wsGrid", 1000, r, a);
     n.setAttribute("style", "position:absolute;top:0px;left:0px;");
     o = n.getContext("2d");
     p = oa("wsGridOverlay", N, O, a);
@@ -345,7 +352,10 @@ function m(a, c) {
         b[1] = Math.floor(Math.random() * u.c[b[0]].e.length)) : (b = v.toString().split("."),
         b[1] || (b[1] = 0));
         ea = u.c[b[0]].e[b[1]].id;
+
+    
         for (h = 0; h < u.c[b[0]].e[b[1]].j.length; h++) {
+
             var f = {};
             f.i = u.c[b[0]].e[b[1]].j[h].toUpperCase();
             f.g = f.i.replace(/[ '-.]/gi, "");
@@ -353,6 +363,18 @@ function m(a, c) {
             f.f = k;
             f.h = k;
             w[h] = f
+            var fth = {};
+            //window.alert('hello');            
+            //uth.c[0].e[0].j = a.clues
+            //window.alert(uth.c[0].e[0].j)            
+            //window.alert(u.c[0].e[0].j)               
+            //window.alert(u.c[b[0]].e[b[1]].j[h])         
+            fth.i = u.c[b[0]].e[b[1]].jth[h];
+            fth.g = fth.i.replace(/[ '-.]/gi, "");
+            fth.d = l;
+            fth.fth = k;
+            fth.h = k;
+            wth[h] = fth            
         }
         for (b = 0; b < w.length; b++) {
             var B, h = w[b].g.length, f = "tb,tb,tb,lr,lr,lr".split(",");
@@ -479,7 +501,8 @@ function ta() {
             j = j + e + 10) : b += 30;
             o.textBaseline = "middle";
             o.fillStyle = w[d].d ? "#777" : "#000";
-            o.fillText(w[d].i, c, b);
+            //o.fillText(w[d].i, c, b);
+            o.fillText(wth[d].i, c, b);            
             w[d].d && (o.globalAlpha = 0.8,
             o.strokeStyle = ua(d),
             o.beginPath(),
@@ -746,7 +769,7 @@ btnRescramble = function() {
 function ca() {
 
     var a = localStorage.getItem("settings");
-    var mya ='{"audio":true,"showGrid":true,"dragSelect":true,"kidMode":false,"allowHints":false,"allowReverseWords":true,"allowDiagonalWords":true}'
+    var mya ='{"audio":true,"showGrid":true,"dragSelect":true,"kidMode":false,"allowHints":true,"allowReverseWords":true,"allowDiagonalWords":true}'
     
     a = mya    
     return a === k ? (a = {
